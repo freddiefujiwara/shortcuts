@@ -1,0 +1,60 @@
+name: Build shortcuts
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Cherri
+        run: |
+          curl -sL -o /tmp/cherri.zip https://github.com/electrikmilk/cherri/releases/download/v2.4.0/cherri_linux-x86_64.zip
+          unzip -o /tmp/cherri.zip -d /tmp/cherri-bin
+          sudo install -m 755 /tmp/cherri-bin/cherri /usr/local/bin/cherri
+          cherri --version
+
+      - name: Build
+        run: make build
+
+      - name: Verify outputs contain actions
+        run: |
+          python3 - <<'PYEOF'
+          import glob, plistlib, sys
+          plists = glob.glob('src/*.plist')
+          if not plists:
+              print('no plist outputs found')
+              sys.exit(1)
+          ok = True
+          for path in plists:
+              with open(path, 'rb') as fh:
+                  data = plistlib.load(fh)
+              count = len(data.get('WFWorkflowActions', []))
+              print(path, 'actions:', count)
+              if count == 0:
+                  ok = False
+          sys.exit(0 if ok else 1)
+          PYEOF
+
+      - name: Upload shortcuts
+        uses: actions/upload-artifact@v4
+        with:
+          name: shortcuts
+          path: src/*.shortcut
+          if-no-files-found: error
+
+      - name: Publish to "latest" release (main only)
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release view latest >/dev/null 2>&1 || gh release create latest --title "Latest shortcuts" --notes "最新のビルド済みショートカットです。各ファイルをタップするとダウンロードできます。"
+          gh release upload latest src/*.shortcut --clobber
