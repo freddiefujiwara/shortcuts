@@ -1,0 +1,26 @@
+#define name SNS
+#define color blue
+#define glyph atom
+
+#include 'actions/web'
+
+menu "Which one?" {
+    item "X":
+        openApp("com.atebits.Tweetie2")
+    item "instagram":
+        openApp("com.burbn.instagram")
+    item "Facebook":
+        openApp("com.facebook.Facebook")
+    item "threads":
+        openApp("com.burbn.barcelona")
+    item "Reader":
+        openURL("https://freddiefujiwara.com/reader/")
+    item "YouTube":
+        openApp("com.google.ios.youtube")
+    item "LinkedIn":
+        openApp("com.linkedin.LinkedIn")
+    item "TikTok":
+        openApp("com.ss.iphone.ugc.Ame")
+    item "discord":
+        openApp("com.hammerandchisel.discord")
+}

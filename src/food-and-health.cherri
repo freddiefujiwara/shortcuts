@@ -1,0 +1,20 @@
+#define name Food&health
+#define color blue
+#define glyph mug
+
+#include 'actions/web'
+
+menu "Which one?" {
+    item "coke on":
+        openApp("com.coke.cokeon")
+    item "wellcne":
+        openApp("com.wellcne.app")
+    item "デジスマ":
+        openApp("jp.digikar.smart.app")
+    item "healthcare":
+        openApp("jp.co.rakuten.health")
+    item "ネットスーパー":
+        openURL("https://shop.aeon.com/netsuper/010500000052640/")
+    item "ヨヤクスリ":
+        openApp("jp.co.rakuten.health.pharmacy")
+}

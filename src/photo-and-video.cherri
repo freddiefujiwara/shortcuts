@@ -1,0 +1,16 @@
+#define name Photo&Video
+#define color green
+#define glyph camera
+
+menu "Which one?" {
+    item "Photos":
+        openApp("com.apple.mobileslideshow")
+    item "Preview":
+        openApp("com.apple.Preview")
+    item "Google photos":
+        openApp("com.google.photos")
+    item "Voice Memo":
+        openApp("com.apple.VoiceMemos")
+    item "Picnic":
+        openApp("com.estsoft.picnic")
+}

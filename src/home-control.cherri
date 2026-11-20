@@ -1,0 +1,28 @@
+#define name Home control
+#define color blue
+#define glyph house
+
+#include 'actions/web'
+
+menu "Which one?" {
+    item "ha.ze.gs":
+        openURL("https://ha.ze.gs/")
+    item "tv.ze.gs":
+        openURL("https://tv.ze.gs/")
+    item "dearis":
+        openApp("jp.co.aiphone.Refine")
+    item "google home":
+        openApp("com.google.Chromecast")
+    item "google tv":
+        openApp("com.google.Movies")
+    item "family link":
+        openApp("com.google.FamilyLink")
+    item "find my":
+        openApp("com.apple.findmy")
+    item "SwitchBot":
+        openApp("com.wohand.wohand")
+    item "IKEA home smart":
+        openApp("com.ikea.inter.homesmart2")
+    item "speedtest":
+        openURL("https://fiber.google.com/speedtest/")
+}

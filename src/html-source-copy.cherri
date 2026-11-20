@@ -1,0 +1,11 @@
+#define name HTML Source Copy
+#define color blue
+#define glyph compass
+#define from sharesheet
+
+#include 'actions/sharing'
+
+action 'runjavascriptonwebpage' runJSOnPage(variable input: 'WFInput', text script: 'WFJavaScript')
+
+@result = runJSOnPage(ShortcutInput, "completion(document.documentElement.outerHTML);")
+setClipboard(@result)

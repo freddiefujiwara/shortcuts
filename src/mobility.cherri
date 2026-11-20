@@ -1,0 +1,18 @@
+#define name Mobility
+#define color purple
+#define glyph car
+
+menu "Which one?" {
+    item "google map":
+        openApp("com.google.Maps")
+    item "HelloCycling":
+        openApp("jp.hellocycling.HELLOCYCLING")
+    item "Timescar":
+        openApp("jp.co.park24.iTcpQuickApps")
+    item "pasmo":
+        openApp("jp.pasmo.mobile.app")
+    item "GO":
+        openApp("com.dena.automotive.taxibell")
+    item "LUUP":
+        openApp("com.Luup.LUUP")
+}

@@ -1,0 +1,4 @@
+# Build outputs (delivered via CI artifacts, not committed)
+*.shortcut
+src/*.plist
+src/*_processed.cherri

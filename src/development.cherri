@@ -1,0 +1,20 @@
+#define name Development
+#define color gray
+#define glyph pc
+
+#include 'actions/web'
+
+menu "Which one?" {
+    item "GitHub":
+        openApp("com.github.stormbreaker.prod")
+    item "termius":
+        openApp("com.crystalnix.ServerAuditor")
+    item "staging":
+        openURL("https://freddiefujiwara.com/staging")
+    item "codex":
+        openApp("com.openai.chat")
+    item "Safari":
+        openApp("com.apple.mobilesafari")
+    item "Google drive":
+        openApp("com.google.Drive")
+}

@@ -1,0 +1,30 @@
+#define name Pay
+#define color blue
+#define glyph walletPass
+
+menu "Which one?" {
+    item "RPay":
+        openApp("jp.co.rakuten.pay.shopper")
+    item "iAEON":
+        openApp("jp.co.aeonst.app.myaeon")
+    item "PayPay":
+        openApp("jp.pay2.app.ios")
+    item "Smart receipt":
+        openApp("jp.co.toshibatec.ss.10029835738.SmartReceipt")
+    item "MerPay":
+        openApp("com.kouzoh.ios.mercari")
+    item "MoneyForward":
+        openApp("com.moneyforward.moneyfwd")
+    item "イオンお買い物":
+        openApp("jp.aeonretail.aeon-coupon")
+    item "楽天家計簿":
+        openApp("jp.co.rakuten.personal-finance")
+    item "iGrow":
+        openApp("jp.co.rakuten-sec.shisankeisei")
+    item "d払い":
+        openApp("com.nttdocomo.keitaibarai")
+    item "au pay":
+        openApp("com.kddi.auwalletapp")
+    item "majica":
+        openApp("com.donki.majica")
+}
