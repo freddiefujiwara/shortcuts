@@ -1,0 +1,5 @@
+#define name Silent On
+#define color gray
+#define glyph bell
+
+rawAction("com.apple.ShortcutsActions.SetSilentModeAction", {"AppIntentDescriptor": {"TeamIdentifier": "0000000000", "BundleIdentifier": "com.apple.ShortcutsActions", "Name": "ShortcutsActions", "AppIntentIdentifier": "SetSilentModeAction"}})
