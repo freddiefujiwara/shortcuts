@@ -17,4 +17,6 @@ menu "Which one?" {
         openApp("jp.co.sony.minchalle")
     item "DeepL":
         openApp("com.linguee.DeepLMobileTranslator")
+    item "Releases":
+        openURL("https://github.com/freddiefujiwara/shortcuts/releases/tag/latest")
 }
