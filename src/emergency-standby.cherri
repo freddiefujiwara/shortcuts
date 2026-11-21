@@ -4,5 +4,6 @@
 
 #include 'actions/device'
 
+rawAction("com.apple.ShortcutsActions.SetSilentModeAction", {"state": 0, "AppIntentDescriptor": {"TeamIdentifier": "0000000000", "BundleIdentifier": "com.apple.ShortcutsActions", "Name": "ShortcutsActions", "AppIntentIdentifier": "SetSilentModeAction"}})
 setVolume(0.8)
 showNotification("緊急待受モードです。音量を上げました", "社用携帯")
