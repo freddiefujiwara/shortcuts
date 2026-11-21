@@ -15,4 +15,6 @@ menu "Which one?" {
         openApp("com.google.ios.ytcreator")
     item "みんちゃれ":
         openApp("jp.co.sony.minchalle")
+    item "DeepL":
+        openApp("com.linguee.DeepLMobileTranslator")
 }
