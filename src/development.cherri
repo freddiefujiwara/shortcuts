@@ -19,4 +19,8 @@ menu "Which one?" {
         openApp("com.apple.mobilesafari")
     item "Google drive":
         openApp("com.google.Drive")
+    item "Shortcuts":
+        openApp("com.apple.shortcuts")
+    item "Files":
+        openApp("com.apple.DocumentsApp")
 }
