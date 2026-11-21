@@ -1,0 +1,8 @@
+#define name Emergency Standby
+#define color red
+#define glyph bell
+
+#include 'actions/device'
+
+setVolume(0.8)
+showNotification("緊急待受モードです。音量を上げました", "社用携帯")
