@@ -1,0 +1,5 @@
+#define name Leave Check
+#define color orange
+#define glyph bell
+
+showNotification("社用携帯、カバンに入れた？", "出発チェック")
