@@ -2,4 +2,4 @@
 #define color orange
 #define glyph bell
 
-showNotification("社用携帯、カバンに入れた？", "出発チェック")
+showNotification("社用携帯、持っていますか？", "出発チェック")

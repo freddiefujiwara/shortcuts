@@ -2,8 +2,4 @@
 #define color green
 #define glyph house
 
-#include 'actions/shortcuts'
-
-showNotification("社用をカバンから出して、畳の定位置へ", "帰宅")
-@input = ""
-run("Home control", @input)
+showNotification("社用携帯を取り出して、気づける場所に置きましょう", "帰宅")
