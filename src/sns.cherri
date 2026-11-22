@@ -13,14 +13,14 @@ menu "Which one?" {
         openApp("com.facebook.Facebook")
     item "threads":
         openApp("com.burbn.barcelona")
-    item "Reader":
-        openURL("https://freddiefujiwara.com/reader/")
     item "YouTube":
         openApp("com.google.ios.youtube")
     item "LinkedIn":
         openApp("com.linkedin.LinkedIn")
     item "TikTok":
         openApp("com.ss.iphone.ugc.Ame")
-    item "discord":
-        openApp("com.hammerandchisel.discord")
+    item "微信":
+        openApp("com.tencent.xin")
+    item "小红书":
+        openApp("com.xingin.discover")
 }
