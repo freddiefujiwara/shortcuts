@@ -7,18 +7,18 @@
 menu "Which one?" {
     item "GitHub":
         openApp("com.github.stormbreaker.prod")
-    item "Releases":
-        openURL("https://github.com/freddiefujiwara/shortcuts/releases/tag/latest")
     item "termius":
         openApp("com.crystalnix.ServerAuditor")
     item "staging":
         openURL("https://freddiefujiwara.com/staging")
-    item "codex":
-        openApp("com.openai.chat")
     item "Safari":
         openApp("com.apple.mobilesafari")
     item "Google drive":
         openApp("com.google.Drive")
+    item "Google Sheets":
+        openApp("com.google.Sheets")
+    item "Google Docs":
+        openApp("com.google.Docs")
     item "Shortcuts":
         openApp("com.apple.shortcuts")
     item "Files":
