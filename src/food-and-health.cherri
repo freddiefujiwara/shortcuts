@@ -17,4 +17,6 @@ menu "Which one?" {
         openURL("https://shop.aeon.com/netsuper/010500000052640/")
     item "ヨヤクスリ":
         openApp("jp.co.rakuten.health.pharmacy")
+    item "からサポ":
+        openURL("jp.co.aeonst.app.myaeon://destination=miniapp?adj_t=1wns6uis&adj_label=&miniapp_id=96620253810755524231636894260251")
 }
