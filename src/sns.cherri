@@ -23,4 +23,6 @@ menu "Which one?" {
         openApp("com.tencent.xin")
     item "小红书":
         openApp("com.xingin.discover")
+    item "room":
+        openApp("jp.co.rakuten.ROOM")
 }
