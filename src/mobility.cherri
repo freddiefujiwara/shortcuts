@@ -15,4 +15,6 @@ menu "Which one?" {
         openApp("com.dena.automotive.taxibell")
     item "LUUP":
         openApp("com.Luup.LUUP")
+    item "povo":
+        openApp("com.kddi.kdla.jp")
 }
