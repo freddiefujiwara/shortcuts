@@ -23,4 +23,6 @@ menu "Which one?" {
         openApp("com.apple.shortcuts")
     item "Files":
         openApp("com.apple.DocumentsApp")
+    item "speedtest":
+        openURL("https://fiber.google.com/speedtest/")
 }
