@@ -23,6 +23,4 @@ menu "Which one?" {
         openApp("com.wohand.wohand")
     item "IKEA home smart":
         openApp("com.ikea.inter.homesmart2")
-    item "speedtest":
-        openURL("https://fiber.google.com/speedtest/")
 }
